@@ -1,0 +1,27 @@
+﻿@model  IEnumerable<ASPNETMVCWeb_API.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @foreach (var item in Model)
+        {
+
+                <dt>@item.Name </dt>
+                <dt>@item.Category </dt>
+                <dt>@item.Category </dt>
+                <dt> @item.Price </dt>
+
+        }      
+
+    </dl>
+</div>
+<p>
+   
+</p>
